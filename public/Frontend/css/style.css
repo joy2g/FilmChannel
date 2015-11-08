@@ -1,0 +1,303 @@
+body{
+}
+.container{
+    max-width: 1000px;
+}
+header {
+	padding: 20px;
+	background: #F1F0F6 url("/Frontend/img/header-border.png") repeat-x scroll 0% 0%;
+    color: #555;
+}
+
+
+/*MODERN NAVBAR*/
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+.navbar {
+    background: transparent;
+    border: none;
+}
+.btn-nav {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    background: #F1F0F6;
+
+}
+.btn-nav:hover {
+    color: #C36464;
+    cursor: pointer;
+    -webkit-transition: color 1s; /* For Safari 3.1 to 6.0 */
+    transition: color 1s;
+}
+.btn-nav.active {
+    color: #C36464;
+    padding: 2px;
+	border-top: 6px solid #C36464;
+	border-bottom: 6px solid #C36464;
+    border-left: 2px solid #C36464;;
+    border-right: 2px solid #C36464;;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -moz-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -ms-transition: border 0.3s ease-out, color 0.3s ease 0.5s; /* IE10 is actually unprefixed */
+    -o-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+}
+.btn-nav.active:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -6px;
+	top: 0;
+	left: 50%;
+}
+.btn-nav .glyphicon {
+    padding-top: 16px;
+	font-size: 22px;
+}
+.btn-nav.active p {
+    margin-bottom: 4px;
+}
+@media (max-width: 480px) {
+    .btn-group {
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media (max-width: 600px) {
+    .btn-nav .glyphicon {
+        padding-top: 12px;
+        font-size: 26px;
+    }
+}
+
+.dropdown-menu {
+    min-width: 767px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+
+.search {
+    margin: 0 auto;
+    float: left;
+    width: 80%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.search input[type="text"] {
+    width: 83.5%;
+    padding: 10px;
+    float: left;
+    border: medium none;
+    outline: medium none;
+    font-family: "gandhi_sansregular";
+    color: #888;
+}
+.search input[type="submit"] {
+    background: #000 url("/Frontend/img/search-icon.png") no-repeat scroll 46% 46%;
+    padding: 10px;
+    width: 50px;
+    cursor: pointer;
+    border: medium none;
+    transition: all 0.5s ease 0s;
+    color: #FFF;
+    outline: medium none;
+    font-family: "gandhi_sansregular";
+    text-transform: uppercase;
+}
+
+#logo {
+    padding-left: 62px;
+    font-weight: bold;
+    color: #888;
+}
+
+.category-heading {
+    border-bottom: 1px solid #F1F0F6;
+    margin-bottom: 20px;
+}
+.category-heading h4{
+    font-family: "gandhi_sansregular";
+    color: #888;
+    text-transform: uppercase;
+}
+
+.content-grid {
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.thumnail {
+    width: 100%;
+}
+.content-grid h5 {
+    font-family: "gandhi_sansregular";
+    padding: 10px 0px;
+    display: block;
+}
+img {
+    max-width: 100%;
+}
+.content-grid ul {
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content-grid li {
+    display: inline;
+}
+
+.content-grid ul li a {
+    padding: 0px 5px;
+}
+
+.video-wraper {
+    border: 1px solid rgba(235, 235, 235, 0.53);
+}
+
+.watchbutton {
+    background: #000 none repeat scroll 0% 0%;
+    padding: 10px;
+    cursor: pointer;
+    border: medium none;
+    transition: all 0.5s ease 0s;
+    color: #FFF;
+    outline: medium none;
+    font-family: "gandhi_sansregular";
+    text-transform: uppercase;
+    display: block;
+    margin: 10px 0px 0px;
+    font-size: 0.875em;
+}
+
+.carousel {
+    background: white;
+}
+
+footer {
+    background: #eee;
+    min-height: 100px;
+}
+
+.stream-wrapper {
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* video infomation*/
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUp, .fadeInLeft, .fadeInRight {
+    visibility: visible;
+}
+
+.movie-avatar-img img{
+    border-radius: 3px;
+    overflow: hidden;
+    width: 370px;
+    height: 398px;
+}
+
+.sub-text {
+    border-left: 1px dotted #FB0000;
+    padding-left: 20px;
+}
+
+.text-dark {
+    color: #BEBEBE !important;
+}
+
+#about {
+    color: #fff;
+}
+
+.main-wrapper {
+    background: #2B2B2B;
+    padding-bottom: 20px;
+    min-height: 550px;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.watch {
+    margin-top: 20px;
+}
+.watch button{
+    background: #C36464;
+    border: none;
+}
+
+#video {
+    display: none;
+}
+
+.video-info {
+    display: none;
+}

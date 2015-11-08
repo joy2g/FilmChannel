@@ -165,101 +165,90 @@
         </div>
     </header>
 
-    <div class="container" id="content">
-        <div class="row">    
-            <div class="container">
-                <div class="row">
-                    <div class="category-heading">
-                        <h4>latest collection of video</h4>
-                    </div>
+    <div class="row-fluid stream-wrapper" id="content">
+        <div class="row-fluid main-wrapper">
+        <div class="container">
+            <section id="about">
+            <div class="more page-scroll" id="more">
+            <a href="#about"><i class="fa fa-angle-down"></i></a>
+            </div>
+            
+    <div class="container wp2 animated fadeInUp">
+    <h1 class="section-title">About the film</h1>
+ 
+        <div class="row">
+            <div class="col-lg-6 wp2 delay-05s animated fadeInUp">   
+    
 
-                     <div class="span12">
-                        <div id="owl-demo" class="owl-carousel">
-                            <div class="item content-grid">
-                                <div class="video-wraper">
-                                    <a href="singlepage.html"><img class="thumnail" src="{{ asset('Frontend/img/video4.jpg') }}" title="allbum-name"></a>
-                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                                    <ul>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/likes.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/views.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/link.png') }}" title="image-name"></a></li>
-                                    </ul>
-                                    <a class="watchbutton" href="singlepage.html">Watch now</a>
-                                </div>
-                            </div>
+              <div class="movie-disc">
+              <div class="movie-avatar">
+                      <div class="movie-avatar-img">
+                            <img src="{{asset('Frontend/img/video.png')}}" alt="">
+                      </div><!-- /.movie-avatar-img --> 
+                  </div><!-- /.movie-disc --> 
+              </div><!-- /.movie-avatar --> 
 
-                            <div class="item content-grid">
-                                <div class="video-wraper">
-                                    <a href="singlepage.html"><img class="thumnail" src="{{ asset('Frontend/img/video4.jpg') }}" title="allbum-name"></a>
-                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                                    <ul>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/likes.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/views.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/link.png') }}" title="image-name"></a></li>
-                                    </ul>
-                                    <a class="watchbutton" href="singlepage.html">Watch now</a>
-                                </div>
-                            </div>  
+            </div><!-- /.col-lg-6 -->
+            
+            <div class="col-lg-6 wp2 delay-1s animated fadeInUp">  
+            <h2>The Story of Avengers <span class="text-color">2</span></h2>
+            <h4 class="sub-text">Release Date: May 05, 2015 <br>
+                                 Rating: PG-13 <br>
+            </h4>
+            
+          
+            
+            <table class="text-dark">
 
-                            <div class="item content-grid">
-                                <div class="video-wraper">
-                                    <a href="singlepage.html"><img class="thumnail" src="{{ asset('Frontend/img/video.png') }}" title="allbum-name"></a>
-                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                                    <ul>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/likes.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/views.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/link.png') }}" title="image-name"></a></li>
-                                    </ul>
-                                    <a class="watchbutton" href="singlepage.html">Watch now</a>
-                                </div>
-                            </div>
+                    <tbody><tr><td>Year </td>  <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td>May 05, 2015</td></tr>
+                    
+                    <tr><td>By </td>    <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td>United Atates of America</td></tr>
+                    
+                    <tr><td>Slogan </td><td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td>«Some assembly required»</td></tr>
+                    
+                    <tr><td>Genre </td><td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td>Fiction, fFantasy, Thriller, Adventure</td></tr>
+                    
+                    <tr><td>Time </td><td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td>142 min. / 2:22</td></tr>
+                    
+                    <tr><td>Budget </td><td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td>$220 000 000</td></tr>
+                     
+                    <tr><td>Age </td>   <td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</td><td><span class="detailed-text">12+</span></td></tr>           
 
-                            <div class="item content-grid">
-                                <div class="video-wraper">
-                                    <a href="singlepage.html"><img class="thumnail" src="{{ asset('Frontend/img/video2.jpg') }}" title="allbum-name"></a>
-                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                                    <ul>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/likes.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/views.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/link.png') }}" title="image-name"></a></li>
-                                    </ul>
-                                    <a class="watchbutton" href="singlepage.html">Watch now</a>
-                                </div>
-                            </div>
+            </tbody></table>
+            <br>
+            
 
-                            <div class="item content-grid">
-                                <div class="video-wraper">
-                                    <a href="singlepage.html"><img class="thumnail" src="{{ asset('Frontend/img/video3.png') }}" title="allbum-name"></a>
-                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                                    <ul>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/likes.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/views.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/link.png') }}" title="image-name"></a></li>
-                                    </ul>
-                                    <a class="watchbutton" href="singlepage.html">Watch now</a>
-                                </div>
-                            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean eget dolor. Aenean massa. Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Corper ipsum rutrum nunc. Vestibulum volutpat pretium libero ultricies nec. 
+            <br>
 
-                            <div class="item content-grid">
-                                <div class="video-wraper">
-                                    <a href="singlepage.html"><img class="thumnail" src="{{ asset('Frontend/img/video4.jpg') }}" title="allbum-name"></a>
-                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                                    <ul>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/likes.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/views.png') }}" title="image-name"></a></li>
-                                        <li><a href="#"><img src="{{ asset('Frontend/img/link.png') }}" title="image-name"></a></li>
-                                    </ul>
-                                    <a class="watchbutton" href="singlepage.html">Watch now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-
-                </div>
-
-                <div class="row">
-                                      
-                </div>
+            </p><div class="detailed">
+            Rating:&nbsp;&nbsp; 
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <span>IMDb &nbsp;<b>/  4.5</b></span> 
+            
+            </div> 
+            <p></p> 
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container --> 
+    <div class="col-md-2 col-md-offset-5 watch">
+        <button id="watch-button" type="button" class="btn btn-danger btn-block btn-lg">Watch</button>
+    </div>
+    </section>
+    
+            <div id="video" class="col-md-12 video-container">
+                <iframe width="100%" height="580px"src="https://www.youtube.com/embed/zTXLy029k28" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+        
+        <div class="container video-info">
+            <div class="category-heading">
+                        <h4>You Are watching "The Avenger 2"</h4>
             </div>
         </div>
     </div>
@@ -267,5 +256,21 @@
     <footer>
         
     </footer>
+
+<script>
+function displayVideo() {
+    $('#video').fadeIn(1000);
+    $('.video-info').fadeIn(1000);
+}
+
+$(document).ready(function () {
+$('#watch-button').on('click', function () {
+        $('#about').fadeOut(1000);
+        setTimeout(displayVideo, 1000);
+        $('.main-wrapper').css('padding-bottom', '0px');
+    });
+});
+    
+</script>
 </body>
 </html>
