@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::get('/stream', function () {
 	return view('stream');
 });
+
+Route::get('/hello', [
+    'as' => 'hello',
+    'uses' => 'Video\VideoController@getVideo'
+    ]);
+
+require __DIR__.'/Route/admin_route.php';
