@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Video;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\Admin\Playlist\CreateRequest;
 use App\Http\Controllers\Controller;
+use App\Playlist;
 
 class PlaylistController extends Controller
 {
@@ -26,7 +28,9 @@ class PlaylistController extends Controller
      */
     public function create()
     {
-        return view('admin.playlist.create');
+        $playlist = new Playlist();
+        $category = ['Action', 'Romance'];
+        return view('admin.playlist.create', compact('playlist', 'category'));
     }
 
     /**
@@ -35,9 +39,35 @@ class PlaylistController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateRequest $request)
     {
-        //
+        $client = new \GuzzleHttp\Client();
+
+        $params = [
+            'query' => [
+                'part' => 'snippet,contentDetails',
+                'key' => config('config_youtube.API_KEY'),
+                'maxResults' => config('config_youtube.MAX_RESULTS'),
+                'id' => $request->input('youtube_id')
+            ]
+        ];
+
+        $response = $client->request('Get', config('config_youtube.PLAYLIST_API_URL'), $params);
+
+        $json = json_decode($response->getBody(), true);
+
+        $requestColumns = $request->all();
+
+        $apiColumns = [
+            'small_thumnail' => $json['items'][0]['snippet']['thumbnails']['medium']['url'],
+            'medium_thumnail' => $json['items'][0]['snippet']['thumbnails']['high']['url'],
+            'large_thumnail' => $json['items'][0]['snippet']['thumbnails']['maxres']['url'],
+            'episode_count' => $json['items'][0]['contentDetails']['itemCount']
+        ];
+
+        $columns = array_merge($requestColumns, $apiColumns);
+
+        Playlist::create($columns);
     }
 
     /**

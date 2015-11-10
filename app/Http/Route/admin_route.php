@@ -3,4 +3,7 @@
 /**
  * Route for playlist
  */
-Route::resource('playlist', 'Video\PlaylistController');
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('playlist', 'Video\PlaylistController');
+});
