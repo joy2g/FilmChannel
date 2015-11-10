@@ -27,8 +27,8 @@
         {!! Former::close() !!}
       </div>
 
+@endsection
 
-
-
-
+@section('js')
+    @include('partials.flash')
 @endsection

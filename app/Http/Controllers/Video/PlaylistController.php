@@ -8,6 +8,8 @@ use App\Http\Requests;
 use App\Http\Requests\Admin\Playlist\CreateRequest;
 use App\Http\Controllers\Controller;
 use App\Playlist;
+use Session;
+use Illuminate\Database\QueryException;
 
 class PlaylistController extends Controller
 {
@@ -67,7 +69,14 @@ class PlaylistController extends Controller
 
         $columns = array_merge($requestColumns, $apiColumns);
 
-        Playlist::create($columns);
+        try {
+            Playlist::create($columns);
+            Session::flash('flash_success', 'Create playlist and videos successfully');
+        } catch (QueryException $ex) {
+            Session::flash('flash_error', 'Something wrong! Cant create playlist and video');
+        } finally {
+            return redirect()->route('admin.playlist.create');
+        }
     }
 
     /**

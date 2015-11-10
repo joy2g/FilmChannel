@@ -24,12 +24,12 @@ class CreateRequest extends Request
     public function rules()
     {
         return [
-            'youtube_id' => 'alpha_num',
-            // 'title',
+            'youtube_id' => 'required|alpha_num|unique:playlists,youtube_id',
+            'title' => 'required',
         	'release_date' => 'date',
-        	// 'by',
+        	'by',
             // 'category',
-        	'age' => 'numeric',
+        	'age' => 'required|numeric',
         	// 'description',
         ];
     }

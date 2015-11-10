@@ -30,6 +30,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" href="{{ asset('assets/css/sweetalert.css') }}">
     @yield('css')
   </head>
   <!--
@@ -101,7 +103,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ asset('AdminLTE-2.3.0/bootstrap/js/bootstrap.min.js') }}"></script>
     <!-- AdminLTE App -->
     <script src="{{ asset('AdminLTE-2.3.0/dist/js/app.min.js') }}"></script>
-    @yield('script')
+
+    <script src="{{ asset('assets/js/alert.js') }}"></script>
+
+    <script src="{{ asset('assets/js/sweetalert.min.js') }}"></script>
+
+    @yield('js')
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
          user experience. Slimscroll is required when using the
